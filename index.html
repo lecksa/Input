@@ -11,101 +11,82 @@
 <body>
     <!-- <span>name</span>
     <input type="text"> -->
-    <div class="wrap">
-        <div class="wrap_f">
-            <h1>All: 15</h1>
-            <h1>Need: 12</h1>
-            <h1>Success:
-                <span class="Success"></span>
-                /12
-            </h1>
-            <h1>Error:
-                <span class="Error"></span>
-                /12
-            </h1>
-        </div>
-        <div class="wrap_p">
-            <div class="item">
-                <h1 class="item_3">Name</h1>
-                <div class="wrong">
-                    <input type="text" class="item_2" required>
-                    <img src="" alt="">
-                </div>
-                <h2>Need to fill</h2>
-            </div>
-            <div class="item">
-                <h1 class="item_3">Age</h1>
-                <div class="wrong">
-                    <input type="text" class="item_2" required>
-                    <img src="" alt="">
-                </div>
-                <h2>Need to fill</h2>
-            </div>
-            <div class="item">
-                <h1>Surname</h1>
-                <input type="text">
-            </div>
-            <div class="item">
-                <h1 class="item_3">About you</h1>
-                <div class="wrong">
-                    <input type="text" class="item_2" required>
-                    <img src="" alt="">
-                </div>
-                <h2>Need to fill</h2>
-            </div>
-            <div class="item">
-                <h1 class="item_3">Email address</h1>
-                <div class="wrong">
-                    <input type="text" class="item_2" required>
-                    <img src="" alt="">
-                </div>
-                <h2>Need to fill</h2>
-            </div>
-            <div class="item">
-                <h1 class="item_3">What is JavaScript?</h1>
-                <div class="wrong">
-                    <input type="text" class="item_2" required>
-                    <img src="" alt="">
-                </div>
-                <h2>Need to fill</h2>
-            </div>
-            <div class="item">
-                <h1>Phone number</h1>
-                <input type="text">
-            </div>
-            <div class="item">
-                <h1 class="item_3">What is HTML?</h1>
-                <div class="wrong">
-                    <input type="text" class="item_2" required>
-                    <img src="" alt="">
-                </div>
-                <h2>Need to fill</h2>
-            </div>
-            <div class="item">
-                <h1>Your mom's name</h1>
-                <input type="text">
-            </div>
-            <div class="item">
-                <h1 class="item_3">What is CSS?</h1>
-                <div class="wrong">
-                    <input type="text" class="item_2" required>
-                    <img src="" alt="">
-                </div>
-                <h2>Need to fill</h2>
-            </div>
-            <div class="item">
-                <h1>Your pap's name</h1>
-                <input type="text">
-            </div>
-            <div class="item">
-                <h1>What is your favourite car?</h1>
-                <input type="text">
-            </div>
-        </div>
-        <form class="wrap_b">
-            <input type="submit" class="but" value="Save changes">
-        </form>
+    <div class="wrap_f">
+        <h1>All: 12</h1>
+        <h1>Need: 7</h1>
+        <h1>Success:
+            <span class="Right"></span>
+            /12
+        </h1>
+        <h1>Error:
+            <span class="Wrong"></span>
+            /12
+        </h1>
     </div>
+    <form name="wrap">
+            <div class="item success">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+                <h2>Need to fill</h2>
+            </div>
+            <div class="item success">
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age">
+                <h2>Need to fill</h2>
+            </div>
+            <div class="item sim">
+                <label for="surname">Surname</label>
+                <input type="text" name="surname" id="surname">
+                <br>
+            </div>
+            <div class="item success">
+                <label for="about you">About you</label>
+                <input type="text" class="item_2" id="about you" name="about you">
+                <h2>Need to fill</h2>
+            </div>
+            <div class="item success">
+                <label for="email address">Email address</label>
+                <input type="text" id="email address" name="email address">
+                <h2>Need to fill</h2>
+            </div>
+            <div class="item success">
+                <label for="JavaScript?">What is JavaScript?</label>
+                <input type="text" id="JavaScript?" name="JavaScript?">
+                <h2>Need to fill</h2>
+            </div>
+            <div class="item sim">
+                <label for="phone number">Phone number</label>
+                <input type="number" id="phone number" name="phone number">
+                <br>
+            </div>
+            <div class="item success">
+                <label for="HTML?">What is HTML?</label>
+                <input type="text" id="HTML?" name="HTML?">
+                <h2>Need to fill</h2>
+            </div>
+            <div class="item sim">
+                <label for="mom">Your mom's name</label>
+                <input type="text" id="mom" name="mom">
+                <br>
+            </div>
+            <div class="item success">
+                <label for="CSS?">What is CSS?</label>
+                <input type="text" id="CSS?" name="CSS?">
+                <h2>Need to fill</h2>
+            </div>
+            <div class="item sim">
+                <label for="pap">Your pap's name</label>
+                <input type="text" id="pap" name="pap">
+                <br>
+            </div>
+            <div class="item sim">
+                <label for="car">What is your favourite car?</label>
+                <input type="text" id="car" name="car">
+                <br>
+            </div>
+        <button type="submit">Save changings</button>
+    </form>
+
     <script src="./index.js"></script>
 </body>
 

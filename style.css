@@ -5,19 +5,23 @@
     box-sizing: border-box;
 }
 
-.wrap {
+form {
+    width: fit-content;
     margin: 0 auto;
-    width: 120px;
-    padding-right: 400px;
+    font-family: Inter;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding-bottom: 20px;
 }
 
 h1 {
-    color: var(--Text-Color, #1A1A1A);
-    font-family: Inter;
+    color: #1A1A1A;
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 input {
@@ -31,28 +35,12 @@ input {
     display: flex;
     flex-direction: column;
     gap: 5px;
-}
-
-.item_2 {
-    border: 2px solid rgb(62, 29, 207);
-}
-
-.item_3 {
-    color: var(--Text-Color, rgb(62, 29, 207));
-    font-family: Inter;
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 h2 {
-    color: var(--Grey-AAA, #595959);
-    font-family: Inter;
+    color: #595959;
     font-size: 11px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .wrap_f {
@@ -60,46 +48,49 @@ h2 {
     gap: 20px;
     padding-bottom: 40px;
     padding-top: 20px;
-    padding-left: 110px;
-}
-
-.wrap_p {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding-bottom: 30px;
-}
-
-.wrap_b {
-    padding-left: 120px;
-    padding-bottom: 30px;
-}
-
-.wrong {
-    display: flex;
-    gap: 5px;
     justify-content: center;
-    align-items: center;
 }
 
-.wrap_b input {
+button {
     border-radius: 4px;
     border: 2px solid #4200FF;
     background: #4200FF;
     color: white;
     cursor: pointer;
-    transition: .5s ease;
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    left: 380px;
+    bottom: 50px;
 }
 
-.active_2 {
-    border: 2px solid rgb(207, 29, 29);
+.error input {
+    border: 2px solid rgb(207, 29, 29) !important;
 }
 
-.active_3 {
-    color: var(--Text-Color, rgb(207, 29, 29));
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+.error {
+    color: rgb(207, 29, 29) !important;
+    position: relative;
+}
+
+.error::after {
+    content: "";
+    display: block;
+    background-image: url('./img/error\ warning.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 32px;
+    right: -22px;
+}
+
+.success {
+    color: rgb(62, 29, 207) !important;
+}
+
+.success input {
+    border: 2px solid rgb(62, 29, 207) !important;
 }
