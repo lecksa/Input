@@ -59,9 +59,8 @@ button {
     cursor: pointer;
     width: 200px;
     height: 40px;
-    position: absolute;
-    left: 380px;
-    bottom: 50px;
+    position: relative;
+    left: 115px;
 }
 
 .error input {
